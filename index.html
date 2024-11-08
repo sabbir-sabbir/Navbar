@@ -19,7 +19,7 @@
            </div>
            
        
-        <div class="md:static md:min-h-fit absolute bg-white min-h-[60vh] left-0 top-[9%] w-full flex items-center px-5 md:w-auto">
+        <div class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
             <ul class="  flex md:flex-row flex-col md:items-center md:gap-[8vh] gap-8 ">
                 <li>
                     <a class="hover:text-gray-500" href="#">Home</a>
@@ -45,7 +45,11 @@
     </nav>
  </header>
  <script>
-    
+     const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
  </script>
   </body>
 </html>
