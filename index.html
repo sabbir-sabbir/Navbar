@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </head>
   <body class="font-[poppins] bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen ">
  <header class="bg-white ">
@@ -18,7 +20,7 @@
            
        
         <div class="md:static md:min-h-fit absolute bg-white min-h-[60vh] left-0 top-[9%] w-full flex items-center px-5 md:w-auto">
-            <ul class="  flex md:flex-row flex-col md:items-center md:gap-[8vh] gap-8">
+            <ul class="  flex md:flex-row flex-col md:items-center md:gap-[8vh] gap-8 ">
                 <li>
                     <a class="hover:text-gray-500" href="#">Home</a>
                 </li>
@@ -36,10 +38,14 @@
                 </li>
             </ul>
         </div>
-        <div>
+        <div class="flex items-center gap-6 ">
             <button class="bg-[#a6c1ee] text-white text-sm px-5 py-3 rounded-xl hover:bg-emerald-400">Sign in</button>
+            <ion-icon onclick="onToggleMenu(this)" name="grid-outline" class="text-3xl cursor-pointer md:hidden"></ion-icon>
         </div>
     </nav>
  </header>
+ <script>
+    
+ </script>
   </body>
 </html>
